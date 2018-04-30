@@ -1,0 +1,89 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  color: #16161d;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+
+.app {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 12px;
+}
+
+.tagline {
+  font-size: 1.3em;
+  margin-bottom: 12px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.form-row label {
+  min-width: 130px;
+  margin-right: 12px;
+}
+
+.form-row input {
+  flex: 1;
+  max-width: 300px;
+}
+
+input {
+  border: none;
+  border-bottom: solid 1px #16161d;
+  outline: none;
+}
+
+input:focus {
+  border-bottom-color: darkslateblue;
+}
+
+input.-invalid {
+  border-bottom-color: crimson;
+  color: crimson;
+}
+
+.form-row.-button {
+  justify-content: center;
+}
+
+button {
+  border: 1px solid #16161d;
+  border-radius: 6px;
+  margin: 12px;
+  padding: 6px;
+}
+
+#subscribe-form.-sending input {
+  pointer-events: none;
+}
+
+button:disabled {
+  color: #888;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
